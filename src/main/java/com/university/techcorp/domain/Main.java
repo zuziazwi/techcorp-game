@@ -11,9 +11,6 @@ import com.university.techcorp.ui.ConsoleUI;
 public class Main {
 
     public static void main(String[] args) {
-        // FIX #1 (critical): starting cash raised to 350 000 so the game is winnable
-        // Calculation: website takes ~13 turns with only Ewa (2 work/turn),
-        // total salary cost = 13 * 22 000 = 286 000; 350 000 leaves a comfortable buffer.
         Company company = new Company("TechCorp", 350_000);
 
         Developer anna = new Developer("Anna", 8, 7_000);
@@ -31,10 +28,8 @@ public class Main {
         Project website = new Project("Website", 25);
         website.addWorker(ewa);
 
-        // FIX #5: startProject() is now actually used — mobileApp begins immediately
-        company.startProject(mobileApp);
-        // website stays PLANNED — the player must start it via the menu
-        company.addProject(website);
+]        company.startProject(mobileApp);
+]        company.addProject(website);
 
         ConsoleUI ui = new ConsoleUI();
         GameEngine engine = new GameEngine(company, ui);
