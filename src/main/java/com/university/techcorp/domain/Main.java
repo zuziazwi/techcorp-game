@@ -28,8 +28,8 @@ public class Main {
         Project website = new Project("Website", 25);
         website.addWorker(ewa);
 
-]        company.startProject(mobileApp);
-]        company.addProject(website);
+        company.startProject(mobileApp);
+        company.addProject(website);
 
         ConsoleUI ui = new ConsoleUI();
         GameEngine engine = new GameEngine(company, ui);
